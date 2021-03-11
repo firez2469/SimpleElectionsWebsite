@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Simple Elections Bot</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Menu</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">How To Get Started</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">The Election Process</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#callout">Commands List</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 style="color:white" class="mb-1">Simple Elections Bot</h1>
+      <h3 style="color:white" class="mb-5">
+        <em>An easy way to run an election on your server</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Details</a>
+      <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://discord.com/oauth2/authorize?client_id=818885022722555944&permissions=4228906225&scope=bot">Add to Discord</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Start your discord election with 1 command!</h2>
+          <p class="lead mb-5">Just by typing in v!createElection you can create a simple election for your server</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">How to get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Creating your Election</h3>
+        <h2 class="mb-5">The Election Process</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-speech"></i>
+            <!--<i class="icon-screen-smartphone"></i>-->
+          </span>
+          <h4>
+            <strong>Create the Election</strong>
+          </h4>
+          <p class="text-faded mb-0">Using the v!createElection command</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-user-follow"></i>
+          </span>
+          <h4>
+            <strong>Candidates Join</strong>
+          </h4>
+          <p class="text-faded mb-0">Using the v!join command </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Vote</strong>
+          </h4>
+          <p class="text-faded mb-0">
+           Using the v!vote command</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-trophy"></i>
+          </span>
+          <h4>
+            <strong>End Election</strong>
+          </h4>
+          <p class="text-faded mb-0">Winners are announced! The election ends with v!endElection</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+  <section class="callout" id="callout">
+    <div class="container text-left">
+      <h2 class="mx-auto mb-5">Commands List:</h2>
+      <div class="h2">Administrator Commands</div>
+      <p class="mb-5"><b>These are commands which can only be used by users with adminstrator permissions:</b></p>
+      <p class="mb-0"><b>v!createElection Election Name :</b><em>Creates an election on your server. You <u>must</u> give an election name</em></p>
+      <p class="mb-0"><b>v!endElection Election Name:</b><em>Ends and election. When invoked the election results will be displayed in the channel the command was run on</em></p>
+      <p class="mb-0"><b>v!audit Election Name:</b><em>Sends all the votes in the election to the channel the command was run on.<u>This command is only to be used to check for suspicious votes</u></em></p>
+      <div class="h2">User Commands</div>
+      <p class="mb-0"><b>v!join Election Name:</b><em> Allows you to join an election as a candidate</em></p>
+      <p class="mb-0"><b>v!dropOut Election Name:</b><em> Allows you to drop out of an election, if you are a candidate</em></p>
+      <p class="mb-0"><b>v!vote Election Name:</b><em> Allows a candidate to vote. When invoked you will recieve a direct message from the bot witch a list of candidates. You respond with the name of the candidate you wish to vote for.</em></p>
+      <p class="mb-0"><b>v!status Election Name:</b><em> Provides an updated list on the vote count of an election.</em></p>
+      <p class="mb-0"><b>v!list :</b><em> Returns a list of the names of all the elections on the server</em></p>
+        
+    </div>
+  </section>
+
+ 
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white" id="#content-section">
+    <div class="container text-center">
+      <h2 class="mb-4">Check out these websites for more information on the bot</h2>
+      <a href="https://discord.gg/7B78XavT" class="btn btn-xl btn-light mr-4">Discord Server</a>
+      <a href="https://discord.bots.gg/bots/818885022722555944" class="btn btn-xl btn-dark">Discord Bots Site</a>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+         
+        </li>
+        <li class="list-inline-item">
+          
+        </li>
+        <li class="list-inline-item">
+          
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Created by firez2469#5352</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
